@@ -6,7 +6,7 @@ import com.polinasmogi.gradethephone.db.PhoneEntity
 import com.polinasmogi.gradethephone.ui.interfaces.ItemClickExecutor
 import kotlinx.android.synthetic.main.item_phone.view.*
 
-class PhoneViewHolder(view: View, executor: ItemClickExecutor) : RecyclerView.ViewHolder(view) {
+class PhoneViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun bind(phoneEntity: PhoneEntity, executor: ItemClickExecutor, position: Int) {
         itemView.phone_name.text = phoneEntity.name

@@ -13,7 +13,7 @@ class PhonesAdapter(private val executor: ItemClickExecutor): ListAdapter<PhoneE
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.item_phone, parent, false)
-        return PhoneViewHolder (view, executor)
+        return PhoneViewHolder (view)
     }
 
     override fun onBindViewHolder(holder: PhoneViewHolder, position: Int) {
